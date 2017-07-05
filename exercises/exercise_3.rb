@@ -13,6 +13,7 @@ puts "----------"
 # 3. Verify that the store has been deleted by again outputting 
 # (`puts`ing) the `count` (as you did in Exercise 1.)
 
-@store3 = Store.find(3).destory
+@store3 = Store.find(3)
+@store3.destroy
 
-p @store3
+p Store.count
